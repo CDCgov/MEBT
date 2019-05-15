@@ -124,5 +124,14 @@
     "siteURL": "",
     "technologies": [ "Java" ],
     "imgURL": "imgs/tn93java.png"
+  },
+  {
+    "name": "MEBT",
+    "description": "A Portfolio Website for the Molecular Epi and Bx Team",
+    "codeURL": "https://github.com/CDCgov/MEBT",
+    "launchURL": "https://cdcgov.github.io/MEBT/",
+    "siteURL": "https://cdcgov.github.io/MEBT/",
+    "technologies": [ "Browser" ],
+    "imgURL": "imgs/mebt.png"
   }
 ]
