@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="humans.txt">
+    <title>Molecular Epidemiology and Bioinformatics Tools</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+      .jumbotron {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: 0;
+        background-color: #fff;
+      }
+
+      .jumbotron p:last-child {
+        margin-bottom: 0;
+      }
+
+      .jumbotron-heading {
+        font-weight: 300;
+      }
+
+      .jumbotron .container {
+        max-width: 40rem;
+      }
+
+      main {
+        padding-top: 56px;
+      }
+
+      .close-card {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        z-index: 1;
+      }
+
+      h5 a {
+        color: black;
+      }
+
+      footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      footer p {
+        margin-bottom: .25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">Hi! We're the <a href="https://github.com/orgs/CDCgov/teams/mebt">Molecular Epidemiology and Bioinformatics Team</a> at the <a href="https://www.cdc.gov/hiv/dhap/about.html">Division of HIV/AIDS Prevention</a> in the <a href="https://cdc.gov/">Centers for Disease Control and Prevention</a>. We make tools to help epidemiologists and other public health professionals do stuff. Let us know how we can help you!</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="mailto:microbetrace@cdc.gov" class="text-white">Email Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar fixed-top navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>MEBT</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Molecular Epidemiology and Bioinformatics Tools</h1>
+          <p class="lead text-muted">Free, Open Source Tools for Managing, Visualizing, and Analyzing Public Health Data. Built at <a href="https://cdc.gov/">CDC</a>.</p>
+        </div>
+      </section>
+
+      <div class="album py-4 bg-light">
+        <div class="container mb-4">
+          <div class="row">
+            <div class="col-md-4"></div>
+            <form class="col-md-4 form-inline">
+              <label for="search">Search</label>
+              <input id="search" class="form-control ml-3 flex-fill"></input>
+            </form>
+            <form class="col-md-4 form-inline">
+              <label for="filter-only">Show</label>
+              <select id="filter-only" class="custom-select ml-3 flex-fill">
+                <option value="" selected>All</option>
+                <option value="Browser">Browser</option>
+                <option value="R">R</option>
+                <option value="Javascript">Javascript</option>
+              </select>
+            </form>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="tiles" class="row"></div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?flags=gated&rum=true"></script>
+    <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+    <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script crossorigin="anonymous" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <script id="tile-template" type="text/template">
+      <div class="col-md-4 tile">
+        <button type="button" class="close close-card" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="card mb-4 shadow-sm">
+          <% print(launchURL && launchURL !== '' ? "<a href='"+launchURL+"'>" : '') %>
+          <img src="<%= imgURL %>" class="card-img-top" width="100%" height="225" />
+          <% print(launchURL && launchURL !== '' ? "</a>" : '') %>
+          <div class="card-body">
+            <h5 class="card-title">
+              <% print(siteURL && siteURL !== '' ? "<a href='"+siteURL+"'>" : '') %>
+              <%= name %>
+              <% print(siteURL && siteURL !== '' ? "</a>" : '') %>
+            </h5>
+            <p class="card-text"><%= description %></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <a href="<%= launchURL %>" role="button" class="btn btn-sm btn-outline-secondary<% print(launchURL === '' ? ' invisible' : '') %>">Launch</a>
+              <small class="text-muted"><% print(technologies.join(', ')) %></small>
+              <a href="<%= codeURL %>" role="button" class="btn btn-sm btn-outline-secondary">View Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script>
+    $(function(){
+      var tileMaker = _.template($('#tile-template').text());
+      var tiles = $('#tiles');
+
+      fetch('projects.json').then(function(res){
+        if(!res.ok) throw Error("Couldn't fetch Projects!");
+        res.json().then(function(projects){
+          projects.forEach(function(project){
+            tiles.append(tileMaker(project));
+          });
+          $('.close').on('click', function(){
+            $(this).parent().fadeOut();
+          });
+          if(window.location.search !== '') research();
+        });
+      });
+
+      function research(){
+        var q = $('#search').val().toLowerCase();
+        var v = $('#filter-only').val();
+        $('.tile').show().filter(function(i, node){
+          return $(node).text().toLowerCase().indexOf(q) == -1;
+        }).hide();
+        $('.tile small').filter(function(i, node){
+          return $(node).text().indexOf(v) == -1;
+        }).parent().parent().parent().parent().hide();
+        history.replaceState({}, '', '?q='+q+'&v='+v);
+      }
+
+      if(window.location.search != ''){
+        window.location.search.slice(1).split('&').forEach(function(param){
+          var kv = param.split('=');
+          if(kv[0] == 'q') $('#search').val(kv[1]);
+          if(kv[0] == 'v') $('#filter-only').val(kv[1]);
+        });
+      }
+
+      $('#search').on('input', research);
+      $('#filter-only').on('change', research);
+    });
+    </script>
+  </body>
+</html>

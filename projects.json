@@ -1,0 +1,128 @@
+[
+  {
+    "name": "MicrobeTrace",
+    "description": "A Visualization Multitool for Molecular Epidemiology and Bioinformatics",
+    "codeURL": "https://github.com/CDCgov/MicrobeTrace/",
+    "launchURL": "https://microbetrace.herokuapp.com/",
+    "siteURL": "",
+    "technologies": [ "Browser" ],
+    "imgURL": "imgs/microbetrace.png"
+  },
+  {
+    "name": "TidyTree",
+    "description": "Phylogenetic Trees in the Browser",
+    "codeURL": "https://github.com/CDCgov/TidyTree/",
+    "launchURL": "https://cdcgov.github.io/TidyTree/demo/",
+    "siteURL": "https://cdcgov.github.io/TidyTree/",
+    "technologies": [ "Browser", "Javascript" ],
+    "imgURL": "imgs/tidytree.png"
+  },
+  {
+    "name": "Proximate",
+    "description": "Pick a county, see its neighbors",
+    "codeURL": "https://github.com/CDCgov/Proximate/",
+    "launchURL": "https://cdcgov.github.io/Proximate/",
+    "siteURL": "",
+    "technologies": [ "Browser" ],
+    "imgURL": "imgs/proximate.png"
+  },
+  {
+    "name": "CSV⬌FASTA",
+    "description": "A little web tool to translate CSVs to FASTA and vice-versa",
+    "codeURL": "https://github.com/CDCgov/CSV2FASTA/",
+    "launchURL": "https://cdcgov.github.io/CSV2FASTA/",
+    "siteURL": "",
+    "technologies": [ "Browser" ],
+    "imgURL": "imgs/csv2fasta.png"
+  },
+  {
+    "name": "Bubbles",
+    "description": "An interactive visualization of Demographics in the US HIV-Positive Population",
+    "codeURL": "https://github.com/CDCgov/Bubbles/",
+    "launchURL": "https://cdcgov.github.io/Bubbles/",
+    "siteURL": "",
+    "technologies": [ "Browser" ],
+    "imgURL": "imgs/bubbles.png"
+  },
+  {
+    "name": "AlignmentViewer",
+    "description": "A simple, dependency-free widget to visualize multiple genome sequences",
+    "codeURL": "https://github.com/CDCgov/AlignmentViewer/",
+    "launchURL": "https://cdcgov.github.io/AlignmentViewer/demo/",
+    "siteURL": "",
+    "technologies": [ "Javascript", "Browser" ],
+    "imgURL": "imgs/alignment.png"
+  },
+  {
+    "name": "MicrobeTraceShiny",
+    "description": "A little R package to launch MicrobeTrace in a Shiny Server",
+    "codeURL": "https://github.com/CDCgov/MicrobeTraceShiny/",
+    "launchURL": "",
+    "siteURL": "",
+    "technologies": [ "R" ],
+    "imgURL": "imgs/microbetraceshiny.png"
+  },
+  {
+    "name": "bioseq-js",
+    "description": "A fast, lightweight implementation of Smith-Waterman in Javascript",
+    "codeURL": "https://github.com/CDCgov/bioseq-js/",
+    "launchURL": "https://cdcgov.github.io/bioseq-js/demo/",
+    "siteURL": "https://cdcgov.github.io/bioseq-js/",
+    "technologies": [ "Javascript", "Browser" ],
+    "imgURL": "imgs/bioseq.png"
+  },
+  {
+    "name": "SeqSpawnR",
+    "description": "An R package to mutate a genetic sequence into a population with normally-distributed pairwise distances",
+    "codeURL": "https://github.com/CDCgov/SeqSpawnR/",
+    "launchURL": "",
+    "siteURL": "https://cdcgov.github.io/SeqSpawnR/",
+    "technologies": [ "R" ],
+    "imgURL": "imgs/seqspawnr.png"
+  },
+  {
+    "name": "tn93.js",
+    "description": "Compute Tamura-Nei '93 genetic distances in Javascript",
+    "codeURL": "https://github.com/CDCgov/tn93.js/",
+    "launchURL": "",
+    "siteURL": "",
+    "technologies": [ "Javascript", "Browser" ],
+    "imgURL": "imgs/tn93.png"
+  },
+  {
+    "name": "patristic",
+    "description": "A Phylogenetics toolkit for Javascript",
+    "codeURL": "https://github.com/CDCgov/patristic",
+    "launchURL": "",
+    "siteURL": "https://cdcgov.github.io/patristic/",
+    "technologies": [ "Javascript" ],
+    "imgURL": "imgs/patristic.png"
+  },
+  {
+    "name": "fileto",
+    "description": "A little library to work with Javascript File objects",
+    "codeURL": "https://github.com/CDCgov/fileto",
+    "launchURL": "",
+    "siteURL": "https://cdcgov.github.io/fileto/",
+    "technologies": [ "Javascript" ],
+    "imgURL": "imgs/fileto.png"
+  },
+  {
+    "name": "nn",
+    "description": "Nearest Neighbor Network",
+    "codeURL": "https://github.com/Sergey-Knyazev/nn",
+    "launchURL": "",
+    "siteURL": "",
+    "technologies": [ "Java" ],
+    "imgURL": "imgs/nn.png"
+  },
+  {
+    "name": "tn93",
+    "description": "",
+    "codeURL": "https://github.com/Sergey-Knyazev/tn93",
+    "launchURL": "",
+    "siteURL": "",
+    "technologies": [ "Java" ],
+    "imgURL": "imgs/tn93java.png"
+  }
+]
