@@ -2,6 +2,37 @@
 
 This repository was created for use by CDC programs to collaborate on public health surveillance related projects in support of the CDC Surveillance Strategy.  Github is not hosted by the CDC, but is used by CDC and its partners to share information and collaborate on software.
 
+## To add additional projects to the MEBT Directory
+
+Edit [projects.json](https://github.com/CDCgov/MEBT/edit/master/projects.json). Add an entry to the bottom of the file, like so:
+
+```json
+...
+  },
+  {
+    "name": "Our New Project",
+    "description": "What it is/does, in one line",
+    "codeURL": "https://github.com/CDCgov/OurNewProject/",
+    "launchURL": "https://cdcgov.github.io/OurNewProject/demo/",
+    "siteURL": "https://cdcgov.github.io/OurNewProject/",
+    "technologies": [ "Browser" ],
+    "imgURL": "imgs/ournewproject.png"
+  }
+]
+```
+
+The `codeURL` is typically the URL for the git repository.
+
+The `launchURL` is a single URL that enables the user to begin using the product immediately. Some products (especially developer-facing tools like libraries) won't have a logical `launchURL`, so just give it an empty string.
+
+The `siteURL` is a URL for a separate website other than the git repository or the app itself. This is for projects that you've set up a Github pages site (or something like that) to store developer documentation (again, or something like that). You probably won't have one, so just set it to the empty string.
+
+`technologies` is an array. "Browser" refers to an app that's used in-browser. "Desktop" refers to an app that's installed (or runs portably) on the desktop. "Mobile" is for mobile apps. "Javascript" refers to a developer-facing Javascript Library, *not* anything written in Javascript (MicrobeTrace, for example, does not have a developer component; thus, though it's written in Javascript, it is only categorized as "Browser"). "R" is anything written in R, Java is anything written in Java, etc.
+
+Add an image of your app to the imgs directory. If there's no way to make it pretty, just screenshot the github page or something. Then set `imgURL` to that filename. Note that this is a relative link, but an absolute link would also work, if you wish to hotlink something from elsewhere on the internet. I don't recommend this, as things on the 'net tend to disappear after awhile.
+
+Commit and merge! The github site will update soon (several minutes) after.
+
 ## Public Domain
 This repository constitutes a work of the United States Government and is not
 subject to domestic copyright protection under 17 USC § 105. This repository is in
