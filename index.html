@@ -119,13 +119,8 @@
               <input id="search" class="form-control ml-3 flex-fill"></input>
             </form>
             <form class="col-md-4 form-inline">
-              <label for="filter-only">Show</label>
-              <select id="filter-only" class="custom-select ml-3 flex-fill">
-                <option value="" selected>All</option>
-                <option value="Browser">Browser</option>
-                <option value="R">R</option>
-                <option value="Javascript">Javascript</option>
-              </select>
+              <label for="technology">Show</label>
+              <select id="technology" class="custom-select ml-3 flex-fill"></select>
             </form>
           </div>
         </div>
@@ -186,20 +181,31 @@
         if(!res.ok) throw Error("Couldn't fetch Projects!");
         res.json().then(function(p){
           projects = p;
-          if(window.location.search !== '') research();
+          var options = [];
+          projects.forEach(function(project){
+            project.technologies.forEach(function(tech){
+              if(!options.includes(tech)) options.push(tech);
+            });
+          });
+          $('#technology').html(
+            '<option value="" selected>All</option>' +
+            options.map(function(option){
+              return '<option>'+option+'</option>';
+            }).join('')
+          );
+          research();
         });
       });
 
+      //TODO: This is a bit of a monstrosity. I'm sorry.
       function research(){
         var t = $('[name="options"]:checked')[0].id;
         var q = $('#search').val().toLowerCase();
-        var v = $('#filter-only').val();
+        var v = $('#technology').val();
         tiles.empty();
         projects.filter(function(project){
-          if(v !== ''){
-            if(!project.technologies.includes(v)){
-              return false;
-            }
+          if(v !== '' && !project.technologies.includes(v)){
+            return false;
           }
           if(t == 'Users' &&
              !project.technologies.includes('Browser') &&
@@ -228,12 +234,12 @@
           var kv = param.split('=');
           if(kv[0] == 't') $('#'+kv[1]).parent().click();
           if(kv[0] == 'q') $('#search').val(kv[1]);
-          if(kv[0] == 'v') $('#filter-only').val(kv[1]);
+          if(kv[0] == 'v') $('#technology').val(kv[1]);
         });
       }
 
       $('#search').on('input', research);
-      $('#filter-only').on('change', research);
+      $('#technology').on('change', research);
       $('[name="options"]').on('change', research);
     });
     </script>
