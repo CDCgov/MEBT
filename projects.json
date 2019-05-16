@@ -45,15 +45,6 @@
     "imgURL": "imgs/bubbles.png"
   },
   {
-    "name": "AlignmentViewer",
-    "description": "A simple, dependency-free widget to visualize multiple genome sequences",
-    "codeURL": "https://github.com/CDCgov/AlignmentViewer/",
-    "launchURL": "https://cdcgov.github.io/AlignmentViewer/demo/",
-    "siteURL": "",
-    "technologies": [ "Javascript", "Browser" ],
-    "imgURL": "imgs/alignment.png"
-  },
-  {
     "name": "MicrobeTraceShiny",
     "description": "A little R package to launch MicrobeTrace in a Shiny Server",
     "codeURL": "https://github.com/CDCgov/MicrobeTraceShiny/",
@@ -61,6 +52,15 @@
     "siteURL": "",
     "technologies": [ "R" ],
     "imgURL": "imgs/microbetraceshiny.png"
+  },
+  {
+    "name": "AlignmentViewer",
+    "description": "A simple, dependency-free widget to visualize multiple genome sequences",
+    "codeURL": "https://github.com/CDCgov/AlignmentViewer/",
+    "launchURL": "https://cdcgov.github.io/AlignmentViewer/demo/",
+    "siteURL": "",
+    "technologies": [ "Javascript", "Browser" ],
+    "imgURL": "imgs/alignment.png"
   },
   {
     "name": "bioseq-js",
