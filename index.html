@@ -101,7 +101,19 @@
       <div class="album py-4 bg-light">
         <div class="container mb-4">
           <div class="row">
-            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+                <label class="btn btn-outline-secondary col">
+                  <input type="radio" name="options" id="Users" autocomplete="off"> Users
+                </label>
+                <label class="btn btn-outline-secondary col">
+                  <input type="radio" name="options" id="Developers" autocomplete="off"> Developers
+                </label>
+                <label class="btn btn-outline-secondary col active">
+                  <input type="radio" name="options" id="All" autocomplete="off" checked> All
+                </label>
+              </div>
+            </div>
             <form class="col-md-4 form-inline">
               <label for="search">Search</label>
               <input id="search" class="form-control ml-3 flex-fill"></input>
@@ -168,34 +180,53 @@
       var tileMaker = _.template($('#tile-template').text());
       var tiles = $('#tiles');
 
+      var projects;
+
       fetch('projects.json').then(function(res){
         if(!res.ok) throw Error("Couldn't fetch Projects!");
-        res.json().then(function(projects){
-          projects.forEach(function(project){
-            tiles.append(tileMaker(project));
-          });
-          $('.close').on('click', function(){
-            $(this).parent().fadeOut();
-          });
+        res.json().then(function(p){
+          projects = p;
           if(window.location.search !== '') research();
         });
       });
 
       function research(){
+        var t = $('[name="options"]:checked')[0].id;
         var q = $('#search').val().toLowerCase();
         var v = $('#filter-only').val();
-        $('.tile').show().filter(function(i, node){
-          return $(node).text().toLowerCase().indexOf(q) == -1;
-        }).hide();
-        $('.tile small').filter(function(i, node){
-          return $(node).text().indexOf(v) == -1;
-        }).parent().parent().parent().parent().hide();
-        history.replaceState({}, '', '?q='+q+'&v='+v);
+        tiles.empty();
+        projects.filter(function(project){
+          if(v !== ''){
+            if(!project.technologies.includes(v)){
+              return false;
+            }
+          }
+          if(t == 'Users' &&
+             !project.technologies.includes('Browser') &&
+             !project.technologies.includes('Desktop') &&
+             !project.technologies.includes('Mobile')){
+               return false;
+          }
+          if(t == 'Developers' &&
+            project.technologies.findIndex(function(tech){
+              return tech !== 'Browser' && tech !== 'Desktop' && tech !== 'Mobile'
+            }) == -1){
+              return false;
+          }
+          return project.name.toLowerCase().indexOf(q) > -1;
+        }).forEach(function(project){
+          tiles.append(tileMaker(project));
+        });
+        $('.close').on('click', function(){
+          $(this).parent().fadeOut();
+        });
+        history.replaceState({}, '', '?t='+t+'&q='+q+'&v='+v);
       }
 
       if(window.location.search != ''){
         window.location.search.slice(1).split('&').forEach(function(param){
           var kv = param.split('=');
+          if(kv[0] == 't') $('#'+kv[1]).parent().click();
           if(kv[0] == 'q') $('#search').val(kv[1]);
           if(kv[0] == 'v') $('#filter-only').val(kv[1]);
         });
@@ -203,6 +234,7 @@
 
       $('#search').on('input', research);
       $('#filter-only').on('change', research);
+      $('[name="options"]').on('change', research);
     });
     </script>
   </body>
