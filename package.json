@@ -4,7 +4,7 @@
   "description": "A directory of projects related to MicrobeTrace",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cache": "./service-worker.sh"
   },
   "author": "",
   "license": "ISC",
