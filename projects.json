@@ -133,5 +133,14 @@
     "siteURL": "https://cdcgov.github.io/MEBT/",
     "technologies": [ "Browser" ],
     "imgURL": "imgs/mebt.png"
+  },
+  {
+    "name": "DemographySpawnR",
+    "description": "input a Private dataset, output a simulated dataset with similar distributions",
+    "codeURL": "https://github.com/CDCgov/DemographySpawnR/",
+    "launchURL": "https://cdcgov.github.io/DemographySpawnR/demo/",
+    "siteURL": "https://cdcgov.github.io/DemographySpawnR/",
+    "technologies": [ "R" ],
+    "imgURL": "imgs/DemographySpawnR.png"
   }
 ]
