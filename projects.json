@@ -12,7 +12,7 @@
     "name": "TidyTree",
     "description": "Phylogenetic Trees in the Browser",
     "codeURL": "https://github.com/CDCgov/TidyTree/",
-    "launchURL": "https://cdcgov.github.io/TidyTree/demo/",
+    "launchURL": "https://cdcgov.github.io/TidyTree/app/",
     "siteURL": "https://cdcgov.github.io/TidyTree/",
     "technologies": [ "Browser", "Javascript" ],
     "imgURL": "imgs/tidytree.png"
