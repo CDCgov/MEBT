@@ -142,5 +142,14 @@
     "siteURL": "https://cdcgov.github.io/DemographySpawnR/",
     "technologies": [ "R" ],
     "imgURL": "imgs/DemographySpawnR.png"
+  },
+  {
+    "name": "HantaNet",
+    "description": "Type Hantavirus sequences using a reference sequence network",
+    "codeURL": "https://github.com/CDCGov/HantaNet/",
+    "launchURL": "https://cdcgov.github.io/HantaNet",
+    "siteURL": "",
+    "technologies": [ "Javascript" ],
+    "imgURL": "imgs/Hantanet.png"
   }
 ]
