@@ -5,7 +5,7 @@
     "codeURL": "https://github.com/CDCgov/MicrobeTrace/",
     "launchURL": "https://microbetrace.herokuapp.com/",
     "siteURL": "",
-    "technologies": [ "Browser" ],
+    "technologies": [ "Browser", "Javascript" ],
     "imgURL": "imgs/microbetrace.png"
   },
   {
@@ -14,7 +14,7 @@
     "codeURL": "https://github.com/CDCGov/HantaNet/",
     "launchURL": "https://cdcgov.github.io/HantaNet",
     "siteURL": "",
-    "technologies": [ "Javascript" ],
+    "technologies": [ "Browser", "Javascript" ],
     "imgURL": "imgs/Hantanet.PNG"
   },
   {
@@ -23,7 +23,7 @@
     "codeURL": "https://github.com/CDCGov/VitalConditions",
     "launchURL": "https://cdcgov.github.io/VitalConditions",
     "siteURL": "",
-    "technologies": [ "Javascript" ],
+    "technologies": [ "Browser", "Javascript" ],
     "imgURL": "imgs/VitalConditions.PNG"
   },
   {
