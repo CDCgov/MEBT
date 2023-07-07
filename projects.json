@@ -9,6 +9,51 @@
     "imgURL": "imgs/microbetrace.png"
   },
   {
+    "name": "HantaNet",
+    "description": "Type Hantavirus sequences using a reference sequence network",
+    "codeURL": "https://github.com/CDCGov/HantaNet/",
+    "launchURL": "https://cdcgov.github.io/HantaNet",
+    "siteURL": "",
+    "technologies": [ "Javascript" ],
+    "imgURL": "imgs/Hantanet.PNG"
+  },
+  {
+    "name": "VitalConditions",
+    "description": "Visuaize relationships between Federal agencies and seven vital conditions of population health and well-being",
+    "codeURL": "https://github.com/CDCGov/VitalConditions",
+    "launchURL": "https://cdcgov.github.io/VitalConditions",
+    "siteURL": "",
+    "technologies": [ "Javascript" ],
+    "imgURL": "imgs/VitalConditions.PNG"
+  },
+  {
+    "name": "SeqRuler",
+    "description": "User friendly tool to calculate TN93 distnaces bewteen sequences with custom ambiguity processing",
+    "codeURL": "https://github.com/CDCGov/SeqRuler",
+    "launchURL": "",
+    "siteURL": "",
+    "technologies": [ "Java" ],
+    "imgURL": "imgs/SeqRuler.PNG"
+  },
+  {
+    "name": "tn93.js",
+    "description": "Compute Tamura-Nei '93 genetic distances in Javascript",
+    "codeURL": "https://github.com/CDCgov/tn93.js/",
+    "launchURL": "",
+    "siteURL": "",
+    "technologies": [ "Javascript", "Browser" ],
+    "imgURL": "imgs/tn93.png"
+  },
+  {
+    "name": "tn93.py",
+    "description": "Compute Tamura-Nei '93 genetic distances in Python",
+    "codeURL": "https://github.com/CDCgov/tn93/",
+    "launchURL": "",
+    "siteURL": "",
+    "technologies": [ "Python" ],
+    "imgURL": "imgs/tn93py.png"
+  },
+  {
     "name": "TidyTree",
     "description": "Phylogenetic Trees in the Browser",
     "codeURL": "https://github.com/CDCgov/TidyTree/",
@@ -81,15 +126,6 @@
     "imgURL": "imgs/seqspawnr.png"
   },
   {
-    "name": "tn93.js",
-    "description": "Compute Tamura-Nei '93 genetic distances in Javascript",
-    "codeURL": "https://github.com/CDCgov/tn93.js/",
-    "launchURL": "",
-    "siteURL": "",
-    "technologies": [ "Javascript", "Browser" ],
-    "imgURL": "imgs/tn93.png"
-  },
-  {
     "name": "patristic",
     "description": "A Phylogenetics toolkit for Javascript",
     "codeURL": "https://github.com/CDCgov/patristic",
@@ -142,32 +178,5 @@
     "siteURL": "https://cdcgov.github.io/DemographySpawnR/",
     "technologies": [ "R" ],
     "imgURL": "imgs/DemographySpawnR.png"
-  },
-  {
-    "name": "HantaNet",
-    "description": "Type Hantavirus sequences using a reference sequence network",
-    "codeURL": "https://github.com/CDCGov/HantaNet/",
-    "launchURL": "https://cdcgov.github.io/HantaNet",
-    "siteURL": "",
-    "technologies": [ "Javascript" ],
-    "imgURL": "imgs/Hantanet.PNG"
-  },
-  {
-    "name": "VitalConditions",
-    "description": "Visuaize relationships between Federal agencies and seven vital conditions of population health and well-being",
-    "codeURL": "https://github.com/CDCGov/VitalConditions",
-    "launchURL": "https://cdcgov.github.io/VitalConditions",
-    "siteURL": "",
-    "technologies": [ "Javascript" ],
-    "imgURL": "imgs/VitalConditions.PNG"
-  },
-  {
-    "name": "SeqRuler",
-    "description": "User friendly tool to calculate TN93 distnaces bewteen sequences with custom ambiguity processing",
-    "codeURL": "https://github.com/CDCGov/SeqRuler",
-    "launchURL": "",
-    "siteURL": "",
-    "technologies": [ "Java" ],
-    "imgURL": "imgs/SeqRuler.PNG"
   }
 ]
