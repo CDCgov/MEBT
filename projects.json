@@ -151,7 +151,7 @@
     "siteURL": "",
     "technologies": [ "Javascript" ],
     "imgURL": "imgs/Hantanet.PNG"
-  }
+  },
   {
     "name": "VitalConditions",
     "description": "Visuaize relationships between Federal agencies and seven vital conditions of population health and well-being",
@@ -160,7 +160,7 @@
     "siteURL": "",
     "technologies": [ "Javascript" ],
     "imgURL": "imgs/VitalConditions.PNG"
-  }
+  },
   {
     "name": "SeqRuler",
     "description": "User friendly tool to calculate TN93 distnaces bewteen sequences with custom ambiguity processing",
