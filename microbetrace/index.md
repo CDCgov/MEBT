@@ -2,14 +2,6 @@
 layout: microbetrace
 ---
 
-# MicrobeTrace toolkit
-
-![image](https://user-images.githubusercontent.com/33426295/150403131-0468f0be-2539-4f2d-88ee-0fb7d4fd411c.png)
-
-## MicrobeTrace is an intuitive, free web-browser based application that renders networks and other highly customizable visualizations from genomic data and/or epidemiological data using simple point-and-click interfaces and help you to discover, understand, and display relationships between patients, pathogen sequences or places (nodes). 
-
-### Quick guide to MicrobeTrace - a 5 minute tour of the tool
-
     <div class="row align-items-md-stretch">
       <div class="col-md-6">
         <div class="h-100 p-5 bg-body-tertiary rounded-3">
