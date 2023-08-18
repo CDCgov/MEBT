@@ -32,6 +32,8 @@ layout: microbetrace
 View an in-depth video demonstrating how to effectively use MicrobeTrace. [https://www.youtube.com/watch?v=5E-_Kb7yvHU](https://www.youtube.com/watch?v=5E-_Kb7yvHU))
 </p>
 </div>
+</div>
+<div class="col-md-6">
 <div class="h-100 p-5 bg-body-tertiary rounded-3">
 <h2>Explore the Tool</h2>
 <p>
