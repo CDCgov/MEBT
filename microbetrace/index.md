@@ -1,3 +1,6 @@
+---
+layout: microbetrace
+---
 
 # MicrobeTrace toolkit
 
