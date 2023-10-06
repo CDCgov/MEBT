@@ -178,5 +178,14 @@
     "siteURL": "https://cdcgov.github.io/DemographySpawnR/",
     "technologies": [ "R" ],
     "imgURL": "imgs/DemographySpawnR.png"
+  },
+{
+    "name": "DUNES",
+    "description": "A tool to generate synthetic sequences with the ability to specify number of sequences, desired distance thresholds as well as percent ambiguities in the generated dataset.",
+    "codeURL": "https://github.com/CDCgov/DemographySpawnR/",
+    "launchURL": "https://cdcgov.github.io/DemographySpawnR/demo/",
+    "siteURL": "https://cdcgov.github.io/DemographySpawnR/",
+    "technologies": [ "R" ],
+    "imgURL": "imgs/DemographySpawnR.png"
   }
 ]
