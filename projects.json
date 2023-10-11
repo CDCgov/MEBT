@@ -33,7 +33,7 @@
     "launchURL": "",
     "siteURL": "",
     "technologies": [ "Java" ],
-    "imgURL": "imgs/SeqRuler.PNG"
+    "imgURL": "imgs/SeqRuler_icon_2.svg"
   },
   {
     "name": "tn93.js",
@@ -186,6 +186,6 @@
     "launchURL": "https://github.com/Sergey-Knyazev/dunes/releases/download/0.1.1/dunes.jar",
     "siteURL": "https://github.com/Sergey-Knyazev/dunes",
     "technologies": [ "Java" ],
-    "imgURL": "imgs/DemographySpawnR.png"
+    "imgURL": "imgs/DemographySpawnR.DUNES icon_2.svg"
   }
 ]
