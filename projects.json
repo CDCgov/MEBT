@@ -182,10 +182,10 @@
 {
     "name": "DUNES",
     "description": "A tool to generate synthetic sequences with the ability to specify number of sequences, desired distance thresholds as well as percent ambiguities in the generated dataset.",
-    "codeURL": "https://github.com/CDCgov/DemographySpawnR/",
-    "launchURL": "https://cdcgov.github.io/DemographySpawnR/demo/",
-    "siteURL": "https://cdcgov.github.io/DemographySpawnR/",
-    "technologies": [ "R" ],
+    "codeURL": "https://github.com/Sergey-Knyazev/dunes",
+    "launchURL": "https://github.com/Sergey-Knyazev/dunes/releases/download/0.1.1/dunes.jar",
+    "siteURL": "https://github.com/Sergey-Knyazev/dunes",
+    "technologies": [ "Java" ],
     "imgURL": "imgs/DemographySpawnR.png"
   }
 ]
