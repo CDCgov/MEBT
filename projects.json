@@ -28,7 +28,7 @@
   },
   {
     "name": "SeqRuler",
-    "description": "User friendly tool to calculate TN93 distnaces bewteen sequences with custom ambiguity processing",
+    "description": "User friendly tool to calculate TN93 or SNP distances between sequences with custom ambiguity processing",
     "codeURL": "https://github.com/CDCGov/SeqRuler",
     "launchURL": "",
     "siteURL": "",
@@ -186,6 +186,6 @@
     "launchURL": "https://github.com/Sergey-Knyazev/dunes/releases/download/0.1.1/dunes.jar",
     "siteURL": "https://github.com/Sergey-Knyazev/dunes",
     "technologies": [ "Java" ],
-    "imgURL": "imgs/DUNES icon_2.svg"
+    "imgURL": "imgs/DUNES icon_2.SVG"
   }
 ]
