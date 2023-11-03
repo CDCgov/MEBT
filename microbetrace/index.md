@@ -7,7 +7,7 @@ layout: microbetrace
 <div class="h-100 p-5 bg-body-tertiary rounded-3">
 <h2>Quick Guide to MicrobeTrace</h2>
 <p>A five minute tour of MicrobeTrace's features</p>
-<a class="btn btn-outline-secondary" href="/">View Quick Guide</a>
+<a class="btn btn-outline-secondary" href="https://www.youtube.com/watch?v=cbSSMAhLfCA">View Quick Guide</a>
 </div>
 </div>
 <div class="col-md-6">
